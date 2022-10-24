@@ -3,3 +3,4 @@
 *.srt
 *.mkv
 *.txt
+*/.ipynb_checkpoints
