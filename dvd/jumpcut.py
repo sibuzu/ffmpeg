@@ -55,7 +55,7 @@ def CreateCCFrame():
     command = "ffmpeg -i "+INPUT_FILE+" -vf fps=1 "+TEMP_INPUT+"/frame%06d.jpg -hide_banner"
     subprocess.call(command, shell=True)
 
-    area = (346, 421, 506, 453)
+    area = (346, 435, 506, 467)  # (x0, y0, x1, y1)
     files = sorted(glob.glob(TEMP_INPUT + "/*.jpg"))
     for fname in files:
         img = Image.open(fname)
